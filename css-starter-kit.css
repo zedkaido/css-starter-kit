@@ -1,0 +1,134 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+}
+
+::before,
+::after {
+	text-decoration: inherit;
+	vertical-align: inherit; 
+}
+
+html {
+	line-height: 1.15; /* standardize line-height */
+	-webkit-text-size-adjust: 100%; /* prevent adjustment of font size after orientation change in iOS */
+}
+
+/**
+ * Remove inconsistent and unnecessary margins
+ */
+body, /* (all) */ 
+dl dl, /* (Chrome, Edge, IE, Safari) 5 lines */
+dl ol,
+dl ul,
+ol dl,
+ul dl,
+ol ol, /* (Edge 18-, IE) 4 lines */
+ol ul,
+ul ol,
+ul ul,
+button, /* (Safari) 3 lines */
+input,
+select,
+textarea { /* (Firefox, Safari) */
+	margin: 0;
+}
+
+h1 {
+	vertical-align: baseline;
+}
+
+hr {
+	overflow: visible; /* show overflow (IE18-, IE) */
+	height: 0; /* correct sizing (Firefox) */
+	border: 1px solid gray;
+}
+
+/**
+ * Render following elements consistently in IE
+ */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article contexts in Chrome, Firefox and Safari.
+ */
+h1 {
+	font-size: 2em;
+	margin: 0.69em 0;
+}
+
+pre {
+	font-family: monospace, monospace; /* correct inheritance and scaling of font size in * browsers */
+	font-size: 1em; /* correc the odd `em` font sizing in all browsers */
+	tab-size: 3; /* YES, the middle way is the way ツ */ 
+}
+
+table {
+	width: 100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+caption {
+	margin: 1em;
+}
+
+th, td {
+	border: 1px solid grey;
+	padding: 0.8em;
+	text-align: left;
+}
+
+small {
+	font-size: 80%;
+}
+
+details {
+	display: block; /* add the correct display in Edge, IE 10+, and Firefox */
+}
+
+summary {
+	display: list-item; /* add the correct display in all browsers */
+}
+
+abbr[title] {
+	cursor: help;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+}
+
+button,
+input { /* 1 */
+	overflow: visible;
+}
+
+button:hover,
+input[type="checkbox"],
+input[type="radio"],
+[aria-controls] {
+	cursor: pointer;
+}
+
+button:disabled,
+input[type="checkbox"][disabled],
+[aria-disabled="true"],
+[disabled] {
+	cursor: not-allowed;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+[aria-busy="true"] {
+	cursor: progress;
+}
